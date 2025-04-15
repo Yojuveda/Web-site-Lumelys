@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Training - Lumelys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏋️‍♂️ Sports Training</h1>
+        <p>Personalized plans and professional guidance to improve your performance.</p>
+    </header>
+
+    <section>
+        <h2>📌 Available Services</h2>
+        <ul>
+            <li>✅ Design of macro training cycles for groups with individualized attention to strategic team cyclists.</li>
+            <li>✅ Personalized macro training cycle designs.</li>
+            <li>✅ Consulting for amateur cyclists and cycle tourists.</li>
+            <li>✅ Data analysis using the Golden Cheetah platform.</li>
+            <li>✅ Weekly training designs using power meters, heart rate monitors, and cadence measurement.</li>
+            <li>✅ Strategic planning for the cycling season.</li>
+            <li>✅ Monthly performance evaluations and methodological adjustments.</li>
+            <li>✅ Creation of methodological responses to possible detected errors.</li>
+        </ul>
+    </section>
+
+    <section id="trainer">
+        <h2>🏆 Meet Your Coach</h2>
+        <p><strong>Maurice Lázaro Espinosa Varela</strong> - A coach with extensive experience in high-performance cycling.</p>
+        <p>Degree in Physical Culture and training in Physical Rehabilitation.</p>
+        <p>Specialist in performance analysis and professional training planning.</p>
+    </section>
+
+    <select id="language-selector" onchange="changeLanguage()">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇺🇸 English</option>
+    </select>
+
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language-selector").value;
+            if (lang === "es") {
+                window.location.href = "entrenamiento_es.html";
+            } else {
+                window.location.href = "entrenamiento_en.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
+<section id="pricing">
+    <h2>💰 Training Fees</h2>
+    <table border="1">
+        <tr>
+            <th>Service Type</th>
+            <th>Cost in Cryptocurrency</th>
+        </tr>
+        <tr>
+            <td>🏋️‍♂️ Individual Training</td>
+            <td>45 USD</td>
+        </tr>
+        <tr>
+            <td>🚴‍♂️ Team Training</td>
+            <td>70 USD</td>
+        </tr>
+    </table>
+    <p>🚀 Alternative payment methods can be arranged upon connection with the support team.</p>
+</section>
+
+<section id="contact">
+    <h2>📩 Join our request group</h2>
+    <p>Before contacting the trainer, review the payment conditions and consult any questions in our reception group.</p>
+    <a href="https://t.me/+l3JDnTB_5L1iZTYx">🚀 Join the Telegram group</a>
+</section>
