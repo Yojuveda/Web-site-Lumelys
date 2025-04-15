@@ -7,28 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Bienvenidos a <span class="resaltado">Lumelys</span></h1>
-        <p>Facilitamos la promoción de experiencias turísticas, servicios de profesorado y pequeños emprendimientos.</p>
+        <h1>Bienvenido a <span class="resaltado">Lumelys</span></h1>
+        <p>Facilitamos la promoción de experiencias turísticas y servicios deportivos.</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="entrenamiento_es.html">🏋️‍♂️ Entrenamiento Deportivo</a></li>
+            <li><a href="profesores_es.html">🎓 Profesores & Clases</a></li>
+            <li><a href="rentas_es.html">🏠 Casas de Renta</a></li>
+            <li><a href="opciones_es.html">🌍 Otras Opciones</a></li>
+        </ul>
+    </nav>
+
     <section id="introduccion">
-        <h2>¿Qué nos diferencia?</h2>
-        <p>Estamos abiertos al pago en <strong>criptomonedas</strong> y no bloqueamos usuarios por su lugar de residencia.</p>
-        <p>Además de conectar a clientes con proveedores, ofrecemos la oportunidad de obtener <strong>ganancias</strong> por la promoción de servicios.</p>
-        <p>Nuestro <strong>token propio</strong> permite a los usuarios formar parte de la comunidad y recomendar nuevos servicios.</p>
+        <h2>💰 ¿Por qué elegir Lumelys?</h2>
+        <p>🚀 Aceptamos pagos en criptomonedas para mayor flexibilidad y accesibilidad.</p>
+        <p>🔗 Estamos desarrollando un **token exclusivo** con recompensas para clientes y proveedores.</p>
     </section>
 
-    <section id="llamado-accion">
-        <h2>Únete a la Revolución del Comercio Independiente</h2>
-        <p>Explora, promociona y conecta con personas alrededor del mundo.</p>
-        <a href="#" class="boton">Empieza ahora</a>
-    </section>
+    <select id="language-selector" onchange="changeLanguage()">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇺🇸 English</option>
+    </select>
 
-    <footer>
-        <p>&copy; 2025 Lumelys - Todos los derechos reservados</p>
-    </footer>
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language-selector").value;
+            if (lang === "es") {
+                window.location.href = "index.html";
+            } else {
+                window.location.href = "index_en.html";
+            }
+        }
+    </script>
+
 </body>
 </html>
-
-<!-- Comentario para forzar actualización -->
